@@ -1,0 +1,89 @@
+.payment {
+  background: #fff;
+}
+
+.payment > h1 {
+  text-align: center;
+  padding: 10px;
+  font-weight: 600;
+  border-bottom: 1px solid #a7a7a7;
+}
+
+.payment > h1 > a {
+  text-decoration: none;
+  color: #000;
+}
+
+.payment > h1 > a:hover {
+  color: blue;
+}
+
+.payment__section {
+  display: flex;
+  padding: 20px;
+  margin: 0 20px;
+  border-bottom: 1px solid #a7a7a7;
+}
+
+.payment__title {
+  flex: 0.2;
+}
+
+.payment__address,
+.payment__items,
+.payment__details {
+  flex: 0.8;
+}
+
+.payment__priceContainer > h3 {
+  margin-top: 20px;
+}
+
+.payment__priceContainer > button {
+  border-radius: 2px;
+  width: 40%;
+  height: 35px;
+  border: none;
+  margin-top: 10px;
+  color: #23212a;
+  background: #d0d0d0;
+  cursor: pointer;
+  font-size: 1.25rem;
+  font-weight: bold;
+  display: block;
+}
+
+.payment__priceContainer > button:hover {
+  opacity: 0.9;
+}
+
+@media only screen and (max-width: 900px) {
+  .payment {
+    font-size: 0.9rem;
+  }
+
+  .payment > h1 {
+    font-size: 1.25rem;
+  }
+
+  .payment__title {
+    font-size: 0.8rem;
+    margin-right: 20px;
+  }
+
+  .payment__priceContainer > button {
+    height: 30px;
+    width: 70%;
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .payment {
+    font-size: 0.85rem;
+  }
+
+  .payment__priceContainer > button {
+    width: 100%;
+  }
+}

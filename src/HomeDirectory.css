@@ -1,0 +1,94 @@
+.directory {
+  background: #23212a;
+  color: #fff;
+  height: 110vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.directory__title {
+  text-align: center;
+}
+
+.directory__title > h2 {
+  font-size: 2.25rem;
+  margin-bottom: 10px;
+}
+
+.directory__departmentCards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.directory__link {
+  cursor: inherit;
+  text-decoration: none;
+  color: #fff;
+}
+
+.directory__card {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+  width: 35vw;
+  border-radius: 10%;
+  text-align: center;
+  margin: 3rem 3rem 0rem 3rem;
+  transition: all 0.3s;
+  opacity: 0.95;
+}
+
+.directory__card > h3 {
+  font-size: 3rem;
+}
+
+.directory__card:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+#men__card {
+  background: url("./images/menCardImage.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#women__card {
+  background: url("./images/womenCardImage.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 900px) {
+  .directory {
+    height: 100vh;
+  }
+
+  .directory__title > h2 {
+    margin-top: 2rem;
+    font-size: 2rem;
+  }
+
+  .directory__title > p {
+    font-size: 0.9rem;
+  }
+
+  .directory__departmentCards {
+    margin-top: 2rem;
+  }
+
+  .directory__card {
+    margin: 1rem;
+    height: 60vh;
+    width: 40vw;
+  }
+
+  .directory__card > h3 {
+    font-size: 2.5rem;
+  }
+}

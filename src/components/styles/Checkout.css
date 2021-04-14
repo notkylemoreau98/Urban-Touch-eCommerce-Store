@@ -1,0 +1,43 @@
+.checkout {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  min-height: 60vh;
+  padding: 20px;
+  height: max-content;
+}
+
+.checkout__left {
+  width: 62.5%;
+}
+
+.checkout__title {
+  border-bottom: 2px solid #23212a;
+  margin-right: 10px;
+  padding: 10px;
+}
+
+.checkout__right {
+  width: 35%;
+}
+
+@media only screen and (max-width: 900px) {
+  .checkout__left {
+    width: 57.5%;
+  }
+
+  .checkout__right {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .checkout {
+    flex-direction: column;
+  }
+
+  .checkout__left,
+  .checkout__right {
+    width: 100%;
+  }
+}

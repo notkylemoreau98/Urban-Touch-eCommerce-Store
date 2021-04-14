@@ -1,0 +1,90 @@
+.mens {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem 2.5rem;
+  border-radius: 10px;
+  background: #f7f7f7;
+}
+
+.mens__shirtsContainer,
+.mens__pantsContainer,
+.mens__shoesContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-content: center;
+  margin: 20px 50px;
+}
+
+.mens__shirts > h1,
+.mens__pants > h1,
+.mens__shoes > h1 {
+  border-bottom: 1px solid #a7a7a7;
+  padding: 10px;
+  margin: 30px 3rem;
+}
+
+.mens__shirts > h1 {
+  margin-top: 10px;
+}
+
+.mens__shoes {
+  margin-bottom: 3rem;
+}
+
+.mens__shirt,
+.mens__pant,
+.mens__shoe {
+  padding: 10px;
+  margin: 20px 0;
+  object-fit: contain;
+  transition: all 0.3s ease;
+}
+
+@media only screen and (max-width: 900px) {
+  .mens__shirtsContainer,
+  .mens__pantsContainer,
+  .mens__shoesContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .mens__shirts > h1,
+  .mens__pants > h1,
+  .mens__shoes > h1 {
+    margin: 30px 2rem;
+  }
+
+  .rowTop {
+    margin-top: 0rem;
+  }
+
+  .rowBottom {
+    margin-top: 4rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mens {
+    margin: 0 1rem;
+    padding: 0 1rem;
+  }
+
+  .mens__shirtsContainer,
+  .mens__pantsContainer,
+  .mens__shoesContainer {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .mens__shirts > h1,
+  .mens__pants > h1,
+  .mens__shoes > h1 {
+    margin: 20px 1rem;
+  }
+
+  .mens__pants > h1,
+  .mens__shoes > h1 {
+    padding-top: 2rem;
+  }
+}

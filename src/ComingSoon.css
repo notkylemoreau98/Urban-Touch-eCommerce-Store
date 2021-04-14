@@ -1,0 +1,35 @@
+.coming {
+  height: 90vh;
+  background: url("./images/showcase-background-4.jpg");
+  background-position: top;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 8rem;
+}
+
+.coming > h3 {
+  font-size: 3.25rem;
+}
+
+.coming > p {
+  font-size: 1.5rem;
+  margin-top: 30px;
+  font-weight: bold;
+  width: 30rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .coming > h3 {
+    font-size: 2.5rem;
+  }
+
+  .coming > p {
+    font-size: 1rem;
+    margin-top: 20px;
+    width: 12rem;
+  }
+}

@@ -1,0 +1,129 @@
+.showcase {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90vh;
+  padding-left: 4rem;
+  padding-bottom: 3rem;
+}
+
+.showcase__imageContainer {
+  flex: 0.4;
+  object-fit: contain;
+  background: blue;
+  height: 60vh;
+  width: 50vw;
+  border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
+  margin-top: 5rem;
+}
+
+.showcase__modelImage {
+  transform: scale(1.5);
+  position: absolute;
+  bottom: 2rem;
+  left: 6rem;
+}
+
+.showcase__textContent {
+  flex: 0.6;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.showcase__titles {
+  text-align: center;
+  margin-top: -1rem;
+}
+
+.showcase__titles span {
+  transition: all 0.3s;
+}
+
+.showcase__titles:hover span {
+  color: blue;
+}
+
+.showcase__titles > h1 {
+  font-size: 3.75rem;
+  color: #23212a;
+  font-family: "B612", sans-serif;
+  width: 40vw;
+}
+
+.showcase__titles > p {
+  padding-left: 10px;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  color: blue;
+}
+
+.showcase__shoppingButton {
+  cursor: pointer;
+  background: #f7f7f7;
+  color: #23212a;
+  width: 20vw;
+  font-size: 1.25rem;
+  padding: 10px;
+  border: 1px solid #23212a;
+  border-radius: 30px;
+  margin-top: 2rem;
+  outline: none;
+  transition: all 0.3s;
+}
+
+.showcase__shoppingButton:hover {
+  background: #23212a;
+  color: #fff;
+  opacity: 0.95;
+  border: 1px solid #23212a;
+}
+
+@media only screen and (max-width: 900px) {
+  .showcase__titles > h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .showcase {
+    padding: 0;
+    padding-bottom: 4rem;
+    height: 75vh;
+    margin-top: -2rem;
+  }
+
+  .showcase__titles > h1 {
+    font-size: 2rem;
+    width: 100%;
+  }
+
+  .showcase__titles > p {
+    font-size: 1rem;
+  }
+
+  .showcase__imageContainer {
+    flex: 0.5;
+    width: 100%;
+    height: 40vh;
+    margin-top: 0;
+  }
+
+  .showcase__modelImage {
+    transform: scale(0.9);
+    left: -5rem;
+    bottom: 6rem;
+  }
+
+  .showcase__textContent {
+    flex: 0.5;
+  }
+
+  .showcase__shoppingButton {
+    width: 30vw;
+    font-size: 1rem;
+    padding: 5px;
+    margin-top: 1rem;
+  }
+}

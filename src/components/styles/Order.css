@@ -1,0 +1,27 @@
+.order {
+  padding: 40px;
+  margin: 20px 0;
+  border: 1px solid #a7a7a7;
+  background: #fff;
+  border-radius: 10px;
+
+  position: relative;
+}
+
+.order__id {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}
+
+.order__total {
+  font-weight: 500;
+  font-size: 1.5rem;
+  text-align: right;
+}
+
+@media only screen and (max-width: 768px) {
+  .order__id {
+    display: none;
+  }
+}

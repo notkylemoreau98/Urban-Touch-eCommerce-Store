@@ -1,0 +1,34 @@
+.subtotal {
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 125px;
+  padding: 20px;
+  border: 1px solid #a7a7a7;
+  border-radius: 3px;
+}
+
+.subtotal > button {
+  border-radius: 2px;
+  width: 100%;
+  height: 40px;
+  border: 1px solid #23212a;
+  margin-top: 10px;
+  color: #23212a;
+  background: #fff;
+  cursor: pointer;
+  font-size: 1.25rem;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.subtotal > button:hover {
+  opacity: 0.9;
+}
+
+@media only screen and (max-width: 900px) {
+  .subtotal > button {
+    height: 45px;
+  }
+}

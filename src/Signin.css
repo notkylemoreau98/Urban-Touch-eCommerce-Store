@@ -1,0 +1,79 @@
+.signin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background: #f7f7f7;
+}
+
+.signin__logo {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit: contain;
+  width: 200px;
+  height: 100px;
+}
+
+.signin__container {
+  background: #fff;
+  width: 400px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  padding: 20px;
+}
+
+.signin__container > h1 {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.signin__container > form {
+  width: 100%;
+}
+
+.signin__container > form > p {
+  margin-bottom: 5px;
+}
+
+.signin__container > form > input {
+  height: 30px;
+  margin-bottom: 10px;
+  background: #fff;
+  outline: none;
+  border: 1px solid black;
+  width: 98%;
+}
+
+.signin__button,
+.signin__createAccountButton {
+  cursor: pointer;
+  border-radius: 2px;
+  width: 100%;
+  height: 40px;
+  border: 1px solid;
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 1.25rem;
+  background: #f7f7f7;
+}
+
+.signin__button:hover,
+.signin__createAccountButton:hover {
+  opacity: 0.85;
+}
+
+.signin__createAccountButton {
+  height: 30px;
+  margin-top: 0;
+}
+
+.signin__accountMessage {
+  margin: 20px auto 10px auto;
+}
