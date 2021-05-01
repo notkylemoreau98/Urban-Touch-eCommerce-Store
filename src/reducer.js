@@ -12,7 +12,7 @@ const reducer = (state, action) => {
 		case 'ADD_TO_CART':
 			return {
 				...state,
-				cart: [...state.cart, action.item],	
+				cart: [...state.cart, action.item],	// Copies the array of objects and adds on the new item
 			};
 
 		case 'EMPTY_CART':

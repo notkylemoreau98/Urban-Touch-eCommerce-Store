@@ -2,7 +2,7 @@
 
 // To-do
 // -Put components into folders
-// -Double check 900px styles (Home)
+// -Double check 900px styles (Home)pn
 
 import React, { useEffect } from 'react';
 import './App.css';
@@ -32,8 +32,6 @@ function App() {
 
   useEffect(() => {
     auth.onAuthStateChanged(authUser => {
-      console.log("User >>> ", authUser);
-
       if(authUser) {
         dispatch({
           type: 'SET_USER',
