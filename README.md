@@ -1,8 +1,29 @@
-# Urban Touch eCommerce Store Prototype Introduction
+# Urban Touch eCommerce Store Prototype
 
-This is a React application that utilizes hooks and React-router in order to generate a working cart system that processes payments through the Stripe API.
+## Description
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a React application that utilizes hooks and React-router in order to generate a working cart system that processes payments through the Stripe API. This function is analogous to what you would see popular clothing brands use on their websites.
+
+View live site here: https://www.urbantouchfashion.com/ 
+
+## Purpose
+
+The purpose behind creating this project was to get myself comfortable with using React hooks such as useReducer, as well as learning how to use outside resources inside of a React application such as the axios library and the Stripe payment API. I also used this project as a way to sharpen my design skills as this is an original design that is fully responsive.
+
+## Technologies
+
+React Hooks: useState, useEffect, useReducer, useContext
+
+React Packages: React-router, react-currency-format
+
+Google's Firebase(NoSQL database program): User authentication, Firestore Database to track order history
+
+Stripe API: Used for payment processing
+
+Node.js: Simple express server create to assist with Stripe payments
+
+
+# How to Run Application 
 
 ## Available Scripts
 
@@ -62,6 +83,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/m
 ### Advanced Configuration
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
 
 ### Deployment
 
