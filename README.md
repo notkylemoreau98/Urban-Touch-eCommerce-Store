@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# Urban Touch eCommerce Store Prototype Introduction
+
+This is a React application that utilizes hooks and React-router in order to generate a working cart system that processes payments through the Stripe API.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
