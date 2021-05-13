@@ -92,3 +92,17 @@
     font-size: 2.5rem;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .directory {
+    height: fit-content;
+  }
+
+  .directory__card {
+    width: 80vw;
+  }
+
+  .directory__departmentCards {
+    flex-direction: column;
+  }
+}

@@ -20,13 +20,13 @@
 .showcase__modelImage {
   transform: scale(1.5);
   position: absolute;
-  bottom: 2rem;
-  left: 6rem;
+  height: 100vh;
+  bottom: 5%;
+  left: 8%;
 }
 
 .showcase__textContent {
   flex: 0.6;
-  text-align: left;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -84,14 +84,24 @@
   .showcase__titles > h1 {
     font-size: 2.5rem;
   }
+
+  .showcase__titles > p {
+    font-size: 1.25rem;
+  }
+
+  .showcase__modelImage {
+    left: 4%;
+  }
 }
 
 @media only screen and (max-width: 768px) {
   .showcase {
     padding: 0;
-    padding-bottom: 4rem;
     height: 75vh;
-    margin-top: -2rem;
+  }
+
+  .showcase__textContent {
+    z-index: 10;
   }
 
   .showcase__titles > h1 {
@@ -100,28 +110,27 @@
   }
 
   .showcase__titles > p {
-    font-size: 1rem;
+    display: none;
   }
 
   .showcase__imageContainer {
-    flex: 0.5;
-    width: 100%;
+    display: flex;
+    flex: 0;
+    width: 0%;
     height: 40vh;
     margin-top: 0;
   }
 
   .showcase__modelImage {
-    transform: scale(0.9);
-    left: -5rem;
-    bottom: 6rem;
+    display: none;
   }
 
   .showcase__textContent {
-    flex: 0.5;
+    flex: 1;
   }
 
   .showcase__shoppingButton {
-    width: 30vw;
+    width: 45vw;
     font-size: 1rem;
     padding: 5px;
     margin-top: 1rem;

@@ -42,7 +42,7 @@
   transition: all 0.3s ease;
 }
 
-@media (max-width: 900px) {
+@media only screen and(max-width: 900px) {
   .women {
     margin: 1rem;
   }
@@ -56,29 +56,45 @@
   .women__tops > h1,
   .women__pants > h1,
   .women__shoes > h1 {
-    margin: 30px 1rem;
+    margin: 30px 2rem;
   }
 
   .rowTop {
-    margin-top: 2rem;
+    margin-top: 0rem;
   }
 
   .rowBottom {
-    margin-top: 5rem;
+    margin-top: 4rem;
   }
 }
 
 @media only screen and (max-width: 768px) {
+  .women {
+    margin: 0 1rem;
+    padding: 0 1rem;
+  }
+
   .women__topsContainer,
   .women__pantsContainer,
   .women__shoesContainer {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
   }
 
   .women__tops > h1,
   .women__pants > h1,
   .women__shoes > h1 {
     margin: 20px 1rem;
+  }
+
+  .women__pants > h1,
+  .women__shoes > h1 {
+    padding-top: 2rem;
+  }
+
+  .women__top,
+  .women__pant,
+  .women__shoe {
+    margin-bottom: 5rem;
   }
 }

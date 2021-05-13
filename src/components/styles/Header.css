@@ -55,8 +55,8 @@
   text-decoration: none;
   color: #23212a;
   position: absolute;
-  top: 1rem;
-  right: 1.25rem;
+  top: 1.75rem;
+  right: 1.5rem;
 }
 
 .header__mobileNav {
@@ -66,9 +66,9 @@
   position: fixed;
   background: #23212a;
   height: 100vh;
-  width: 250px;
+  width: 100vw;
   top: 0;
-  right: -100%;
+  right: -150%;
   transition: right 0.65s ease-in-out;
 }
 
@@ -88,14 +88,15 @@
   padding: 10px 15px;
   text-decoration: none;
   position: absolute;
-  right: 5px;
+  left: 5px;
   top: 5px;
 }
 
 .header__mobileNav .header__mobileLink {
-  margin: 20px;
+  margin: 30px;
   text-decoration: none;
   font-weight: 700;
+  font-size: 1.75rem;
   color: #f7f7f7;
 }
 

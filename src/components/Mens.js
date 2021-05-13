@@ -23,6 +23,7 @@ function Mens() {
 					<div className="mens__shirt rowBottom">
 						<Product id="104" title="Long-sleeved Jersey Shirt" price={19.99} image="https://lp2.hm.com/hmgoepprod?set=source[/6e/ec/6eecdc20cbd9cec6e33fc0b3827e77844a8d02fc.jpg],origin[dam],category[men_tshirtstanks_longsleeve],type[DESCRIPTIVESTILLLIFE],res[z],hmver[1]&call=url[file:/product/main]" />
 					</div>
+
 				</div>
 			</section>
 			
@@ -66,6 +67,7 @@ function Mens() {
 						<Product id="112" title="Penny Loafers" price={39.99} image="https://lp2.hm.com/hmgoepprod?set=source[/5d/72/5d72813e5a670283983032c79fd19fd78d52f963.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[z],hmver[1]&call=url[file:/product/main]" />
 					</div>
 				</div>
+				
 			</section>
 
 		</div>

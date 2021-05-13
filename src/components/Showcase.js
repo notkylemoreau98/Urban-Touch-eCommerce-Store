@@ -1,7 +1,7 @@
 import React from 'react';
-import './Showcase.css';
+import './styles/Showcase.css';
 import { Link } from 'react-router-dom';
-import Model from './images/Showcase Model.png'
+import Model from './styles/images/Showcase Model.png'
 
 function Showcase() {
 	return (

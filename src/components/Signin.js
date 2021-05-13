@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import './Signin.css';
+import './styles/Signin.css';
 import { Link, useHistory } from 'react-router-dom';
-import { auth } from './firebase';
-import Logo from './images/simple-logo.png'
+import { auth } from '../firebase';
+import Logo from './styles/images/simple-logo.png'
 
 
 function Signin() {
@@ -46,10 +46,10 @@ function Signin() {
 				<h1>Sign-in</h1>
 
 				<form>
-					<p>Email</p>
+					<p>Email (Test: williamkylemoreau@gmail.com)</p>
 					<input type="email" value={email} onChange={e => setEmail(e.target.value)} />
 
-					<p>Password</p>
+					<p>Password (Test: Test123)</p>
 					<input type="password" value={password} onChange={e => setPassword(e.target.value)} />
 
 					<button type="submit" className='signin__button' onClick={signIn}  >Sign In</button>

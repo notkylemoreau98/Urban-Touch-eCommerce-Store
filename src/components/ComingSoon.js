@@ -1,5 +1,5 @@
 import React from 'react';
-import './ComingSoon.css';
+import './styles/ComingSoon.css';
 
 function ComingSoon() {
 	return (

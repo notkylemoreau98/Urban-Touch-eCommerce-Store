@@ -1,5 +1,5 @@
 import React from 'react';
-import './HomeDirectory.css';
+import './styles/HomeDirectory.css';
 import { Link } from 'react-router-dom';
 
 function HomeDirectory() {

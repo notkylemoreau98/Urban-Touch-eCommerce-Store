@@ -21,6 +21,7 @@ function Payment() {
 	const stripe = useStripe();
 	const elements = useElements();
 
+
 	useEffect(() => {
 		const getClientSecret = async () => {
 			const response = await axios({
@@ -30,10 +31,11 @@ function Payment() {
 			setClientSecret(response.data.clientSecret);
 		};
 
-		getClientSecret(); //Have to do this when running an async function in a useEffect
+		getClientSecret(); 
+		console.log(clientSecret); //Error getting client secret
+
 	}, [cart])
 
-	console.log(clientSecret);
 
 	const handleSubmit = async(e) => {
 		e.preventDefault();
@@ -43,9 +45,7 @@ function Payment() {
 			payment_method: {
 				card: elements.getElement(CardElement)
 			}
-		}).then(({ paymentIntent }) => {
-				// PaymentIntent = Payment Confirmation bascially
-
+		}).then(({ paymentIntent }) => { //This is a destructured response
 				db.collection('users')
 					.doc(user?.uid)
 					.collection('orders')
@@ -67,6 +67,7 @@ function Payment() {
 				history.replace('/orders'); 
 		});
 	}
+
 
 	const handleChange = e => {
 		setDisabled(e.empty);

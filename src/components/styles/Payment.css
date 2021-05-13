@@ -83,7 +83,17 @@
     font-size: 0.85rem;
   }
 
+  .payment__section {
+    flex-direction: column;
+  }
+
+  .payment__section h3 {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+  }
+
   .payment__priceContainer > button {
     width: 100%;
+    height: 45px;
   }
 }

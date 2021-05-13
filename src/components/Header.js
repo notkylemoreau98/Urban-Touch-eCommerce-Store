@@ -5,7 +5,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 import { Link } from 'react-router-dom';
 import { useStateValue } from '../StateProvider';
 import { auth } from '../firebase';
-import Logo from '../images/simple-logo.png'
+import Logo from './styles/images/simple-logo.png'
 
 
 // Make the mobile nav appear only at 600 instead of 900px

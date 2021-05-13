@@ -3,11 +3,13 @@
   display: block;
   background: #f7f7f7;
   height: 100vh;
+  border: 1px solid #000;
+  margin: 2rem;
 }
 
 .accountPage__message {
   text-align: center;
-  padding: 5rem 10rem;
+  padding: 5rem;
 }
 
 .accountPage__message span {
@@ -53,12 +55,21 @@
   }
 
   .accountPage__message {
-    padding: 3rem;
+    padding: 1rem;
+  }
+
+  .accountPage__previousOrdersButton {
+    height: fit-content;
+    font-size: 1rem;
   }
 }
 
 @media only screen and (max-width: 768px) {
   .accountPage {
     font-size: 0.75rem;
+  }
+
+  .accountPage > p {
+    font-size: 0.65rem;
   }
 }

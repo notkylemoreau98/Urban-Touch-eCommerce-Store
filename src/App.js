@@ -1,16 +1,15 @@
-// npm run build --> firebase deploy (if I want to deploy website again after making changes)
-
 // To-do
 // -Put components into folders
 // -Double check 900px styles (Home)pn
+// Add new mobile background image to home page and done i think
 
 import React, { useEffect } from 'react';
 import './App.css';
 import ScrollToTop from './components/ScrollToTop';
 import Header from './components/Header';
-import Showcase from './Showcase';
-import HomeDirectory from './HomeDirectory';
-import ComingSoon from './ComingSoon';
+import Showcase from './components/Showcase';
+import HomeDirectory from './components/HomeDirectory';
+import ComingSoon from './components/ComingSoon';
 import Footer from './components/Footer';
 import Checkout from './components/Checkout';
 import Payment from './components/Payment';
@@ -18,7 +17,7 @@ import Orders from './components/Orders';
 import Mens from './components/Mens';
 import Women from './components/Women';
 import AccountPage from './components/AccountPage';
-import Signin from './Signin';
+import Signin from './components/Signin';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { auth } from './firebase';
 import { useStateValue } from './StateProvider';
