@@ -35,7 +35,7 @@ function Mens() {
 					</div>
 
 					<div className="mens__pant rowTop">
-						<Product id="106" title="Relaxed-Fit Chinos" price={17.99} image="https://lp2.hm.com/hmgoepprod?set=source[/1f/bb/1fbbe7190e86677555228357ed13ea28f5711914.jpg],origin[dam],category[men_trousers_chinos],type[DESCRIPTIVESTILLLIFE],res[z],hmver[1]&call=url[file:/product/main]" />
+						<Product id="106" title="Cotton Chinos" price={17.99} image="https://lp2.hm.com/hmgoepprod?set=source[/df/c0/dfc05e354e86bd1130549a5b1a3dc194fa8e5e85.jpg],origin[dam],category[men_trousers_chinos],type[DESCRIPTIVESTILLLIFE],res[z],hmver[2]&call=url[file:/product/main]" />
 					</div>
 
 					<div className="mens__pant rowBottom">
@@ -43,7 +43,7 @@ function Mens() {
 					</div>
 
 					<div className="mens__pant rowBottom">
-						<Product id="108" title="Knee-length Cotton Shorts" price={19.99} image="https://lp2.hm.com/hmgoepprod?set=source[/6b/ca/6bca193394e1552b10268fea72dc39b639918be7.jpg],origin[dam],category[men_shorts],type[DESCRIPTIVESTILLLIFE],res[z],hmver[1]&call=url[file:/product/main]" />
+						<Product id="108" title="Cotton Cargo Pants" price={39.99} image="https://lp2.hm.com/hmgoepprod?set=source[/31/cc/31cc7646ba928a0e3d822ed222f4635e2046c266.jpg],origin[dam],category[men_trousers_cargo],type[DESCRIPTIVESTILLLIFE],res[z],hmver[2]&call=url[file:/product/main]" />
 					</div>
 				</div>
 			</section>

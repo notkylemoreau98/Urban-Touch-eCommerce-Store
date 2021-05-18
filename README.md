@@ -1,10 +1,23 @@
 # Urban Touch eCommerce Store Prototype
 
+## Test Login and Card Information
+
+### Login
+
+Username: williamkylemoreau@gmail.com
+Password: Test123
+
+### Card Info
+
+Card Number: 4242 4242 4242 4242
+Expiration Date: 04/24
+Zipcode: 242424
+
 ## Description
 
 This is a React application that utilizes hooks and React-router in order to generate a working cart system that processes payments through the Stripe API. This function is analogous to what you would see popular clothing brands use on their websites.
 
-View live site here: https://www.urbantouchfashion.com/ 
+View live site here: https://www.urbantouchfashion.com/
 
 ## Purpose
 
@@ -22,8 +35,7 @@ Stripe API: Used for payment processing
 
 Node.js: Simple express server create to assist with Stripe payments
 
-
-# How to Run Application 
+# How to Run Application
 
 ## Available Scripts
 
@@ -85,7 +97,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/m
 This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 
 ### Deployment
 
