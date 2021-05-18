@@ -11,7 +11,7 @@ Password: Test123
 
 Card Number: 4242 4242 4242 4242
 Expiration Date: 04/24
-Zipcode: 242424
+Zipcode: 24242
 
 ## Description
 
