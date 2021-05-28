@@ -20,8 +20,7 @@ Zipcode: 24242
 
 This is a React application that utilizes hooks and React-router in order to generate a working cart system that processes payments through the Stripe API. This function is analogous to what you would see popular clothing brands use on their websites.
 
-View live site here: https://www.urbantouchfashion.com/
-
+View live site here: https://urbantouchapparel.com/
 ## Purpose
 
 The purpose behind creating this project was to get myself comfortable with using React hooks such as useReducer, as well as learning how to use outside resources inside of a React application such as the axios library and the Stripe payment API. I also used this project as a way to sharpen my design skills as this is an original design that is fully responsive.
