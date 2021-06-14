@@ -1,32 +1,16 @@
 .showcase {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   height: 90vh;
-  padding-left: 4rem;
-  padding-bottom: 3rem;
-}
-
-.showcase__imageContainer {
-  flex: 0.4;
-  object-fit: contain;
-  background: blue;
-  height: 60vh;
-  width: 50vw;
-  border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
-  margin-top: 5rem;
-}
-
-.showcase__modelImage {
-  transform: scale(1.5);
-  position: absolute;
-  height: 100vh;
-  bottom: 5%;
-  left: 8%;
+  background-image: linear-gradient(to bottom, transparent 0%, #23212a 100%),
+    url("./images/UrbanTouch_MobileBackground.jpg");
+  background-position: center;
+  background-size: cover;
+  padding-top: 5.5rem;
 }
 
 .showcase__textContent {
-  flex: 0.6;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -34,39 +18,30 @@
 
 .showcase__titles {
   text-align: center;
-  margin-top: -1rem;
-}
-
-.showcase__titles span {
-  transition: all 0.3s;
-}
-
-.showcase__titles:hover span {
-  color: blue;
 }
 
 .showcase__titles > h1 {
   font-size: 3.75rem;
-  color: #23212a;
+  color: #f7f7f7;
   font-family: "B612", sans-serif;
-  width: 40vw;
+  width: 80vw;
 }
 
 .showcase__titles > p {
   padding-left: 10px;
   margin-top: 1rem;
   font-size: 1.5rem;
-  color: blue;
+  color: #f7f7f7;
 }
 
 .showcase__shoppingButton {
   cursor: pointer;
-  background: #f7f7f7;
-  color: #23212a;
+  background: transparent;
+  color: #f7f7f7;
   width: 20vw;
   font-size: 1.25rem;
   padding: 10px;
-  border: 1px solid #23212a;
+  border: 3px solid #23212a;
   border-radius: 30px;
   margin-top: 2rem;
   outline: none;
@@ -74,10 +49,8 @@
 }
 
 .showcase__shoppingButton:hover {
-  background: #23212a;
-  color: #fff;
   opacity: 0.95;
-  border: 1px solid #23212a;
+  border-color: #f7f7f7;
 }
 
 @media only screen and (max-width: 900px) {
@@ -96,8 +69,13 @@
 
 @media only screen and (max-width: 768px) {
   .showcase {
-    padding: 0;
+    padding: 7rem 0 0 0;
     height: 75vh;
+    background-image: linear-gradient(to bottom, transparent 0%, #23212a 100%),
+      url("./images/UrbanTouch_MobileBackground.jpg");
+    background-position: right;
+    background-size: cover;
+    background-repeat: none;
   }
 
   .showcase__textContent {
@@ -107,6 +85,8 @@
   .showcase__titles > h1 {
     font-size: 2rem;
     width: 100%;
+    /* color: blue; */
+    color: #fff;
   }
 
   .showcase__titles > p {
@@ -130,9 +110,13 @@
   }
 
   .showcase__shoppingButton {
-    width: 45vw;
+    width: 35vw;
     font-size: 1rem;
-    padding: 5px;
-    margin-top: 1rem;
+    padding: 0.35rem 0;
+    margin-top: 2rem;
+    background: none;
+    border-radius: 8px;
+    border: 2px solid;
+    color: #fff;
   }
 }

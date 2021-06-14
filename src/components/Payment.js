@@ -33,11 +33,10 @@ function Payment() {
 
 		getClientSecret(); 
 		console.log(clientSecret); //Error getting client secret
-
 	}, [cart])
 
 
-	const handleSubmit = async(e) => {
+	const handleSubmit = async (e) => {
 		e.preventDefault();
 		setProcessing(true);
 
@@ -45,7 +44,7 @@ function Payment() {
 			payment_method: {
 				card: elements.getElement(CardElement)
 			}
-		}).then(({ paymentIntent }) => { //This is a destructured response
+		}).then(({ paymentIntent }) => { //paymentIntent (confirmation) is a stripe prop
 				db.collection('users')
 					.doc(user?.uid)
 					.collection('orders')
@@ -101,7 +100,7 @@ function Payment() {
 					<div className="payment__items">
 						{cart.map(item => (
 							<CheckoutProduct 
-								id={item.id}
+								key={item.id}
 								title={item.title}
 								image={item.image}
 								price={item.price}

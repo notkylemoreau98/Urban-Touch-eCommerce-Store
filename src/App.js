@@ -1,8 +1,3 @@
-// To-do
-// -Put components into folders
-// -Double check 900px styles (Home)pn
-// Add new mobile background image to home page and done i think
-
 import React, { useEffect } from 'react';
 import './App.css';
 import ScrollToTop from './components/ScrollToTop';

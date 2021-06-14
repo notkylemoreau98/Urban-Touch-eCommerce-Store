@@ -53,13 +53,13 @@
 }
 
 #men__card {
-  background: url("./images/menCardImage.jpg");
+  background: url("./images/menDirect.jpg");
   background-position: center;
   background-size: cover;
 }
 
 #women__card {
-  background: url("./images/womenCardImage.jpg");
+  background: url("./images/womenDirect.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -84,7 +84,7 @@
 
   .directory__card {
     margin: 1rem;
-    height: 60vh;
+    height: 55vh;
     width: 40vw;
   }
 
@@ -96,13 +96,25 @@
 @media only screen and (max-width: 768px) {
   .directory {
     height: fit-content;
+    padding-top: 1.5rem;
   }
 
   .directory__card {
-    width: 80vw;
+    width: 75vw;
+    height: 65vh;
+    border-radius: 8px;
+  }
+
+  .directory__card > h3 {
+    padding-top: 2rem;
   }
 
   .directory__departmentCards {
     flex-direction: column;
+  }
+
+  #men__card,
+  #women__card {
+    background-position: top;
   }
 }

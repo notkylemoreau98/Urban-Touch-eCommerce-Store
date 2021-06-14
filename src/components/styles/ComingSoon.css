@@ -1,14 +1,15 @@
 .coming {
-  height: 90vh;
-  background: url("./images/showcase-background-4.jpg");
-  background-position: top;
+  height: 95vh;
+  background: url("./images/ComingSoonBkg.jpg");
+  background-position: center;
   background-size: cover;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   text-align: center;
   padding-bottom: 8rem;
+  padding-top: 1.5rem;
 }
 
 .coming > h3 {
@@ -17,19 +18,23 @@
 
 .coming > p {
   font-size: 1.5rem;
-  margin-top: 30px;
   font-weight: bold;
   width: 30rem;
+  margin-top: 15px;
 }
 
 @media only screen and (max-width: 900px) {
+  .coming {
+    height: 55vh;
+  }
+
   .coming > h3 {
     font-size: 2.5rem;
   }
 
   .coming > p {
     font-size: 1rem;
-    margin-top: 20px;
-    width: 12rem;
+    width: 20rem;
+    margin-top: 10px;
   }
 }

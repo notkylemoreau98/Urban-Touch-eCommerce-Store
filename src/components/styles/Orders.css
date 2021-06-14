@@ -1,14 +1,10 @@
 .orders {
   height: fit-content;
   background: #f7f7f7;
-  padding: 1rem 3rem;
+  padding: 4.5rem 3rem 1rem 3rem;
 }
 
 @media (max-width: 900px) {
-  .orders {
-    padding: 1rem 3rem;
-  }
-
   .orders > h1 {
     font-size: 1.5rem;
   }
@@ -16,12 +12,12 @@
 
 @media only screen and (max-width: 900px) {
   .orders {
-    padding: 1rem 2rem;
+    padding: 4.5rem 2rem 1rem 2rem;
   }
 }
 
 @media only screen and (max-width: 768px) {
   .orders {
-    padding: 1rem;
+    padding: 4.5rem 1rem 1rem 1rem;
   }
 }

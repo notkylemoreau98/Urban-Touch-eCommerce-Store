@@ -4,16 +4,14 @@ export const initialState = {
 }
 
 // Selector
-export const getCartTotal = (cart) =>
-	cart?.reduce((amount, item) => item.price + amount, 0);
-	
+export const getCartTotal = (cart) => cart?.reduce((amount, item) => item.price + amount, 0);
 	
 const reducer = (state, action) => {
 	switch (action.type) {
 		case 'ADD_TO_CART':
 			return {
 				...state,
-				cart: [...state.cart, action.item],	// Copies the array of objects and adds on the new item
+				cart: [...state.cart, action.item],	// Copies the array of cart objects and adds on the new item
 			};
 
 		case 'EMPTY_CART':
@@ -23,9 +21,7 @@ const reducer = (state, action) => {
 			}
 
 		case 'REMOVE_FROM_CART':
-			const index = state.cart.findIndex(
-				(cartItem) => cartItem.id === action.id
-			);
+			const index = state.cart.findIndex((cartItem) => cartItem.key === action.id);
 			let newCart = [...state.cart];
 
 			if(index >= 0) {

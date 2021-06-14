@@ -46,10 +46,10 @@ function Signin() {
 				<h1>Sign-in</h1>
 
 				<form>
-					<p>Email (Test: testoutmyproject@gmail.com)</p>
+					<p><strong>Email</strong> (Test: testoutmyproject@gmail.com)</p>
 					<input type="email" value={email} onChange={e => setEmail(e.target.value)} />
 
-					<p>Password (Test: Test123)</p>
+					<p><strong>Password</strong> (Test: Test123)</p>
 					<input type="password" value={password} onChange={e => setPassword(e.target.value)} />
 
 					<button type="submit" className='signin__button' onClick={signIn}  >Sign In</button>

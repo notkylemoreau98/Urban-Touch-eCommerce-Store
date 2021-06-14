@@ -8,5 +8,5 @@ export const StateProvider = ({ reducer, initialState, children}) => (
 	</StateContext.Provider>
 );
 
-// This is how information is pulled from data layer
+// This is how cart information is shared across the application
 export const useStateValue = () => useContext(StateContext);

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './styles/Header.css'
 import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
 import MenuIcon from '@material-ui/icons/Menu';
@@ -7,14 +7,12 @@ import { useStateValue } from '../StateProvider';
 import { auth } from '../firebase';
 import Logo from './styles/images/simple-logo.png'
 
-
-// Make the mobile nav appear only at 600 instead of 900px
-
 function Header() {
 
 	const [{ cart, user }, dispatch] = useStateValue();
 	const [sideNav, setSidenav] = useState(false);
-
+	const	[navScroll, setNavScroll] = useState(false);
+	
 	const handleAuth = () => {
 		if(user) {
 			auth.signOut();
@@ -23,8 +21,12 @@ function Header() {
 
 	const showNav = () => setSidenav(!sideNav);
 
+	const fillHeader = () => window.scrollY >= 40 ? setNavScroll(true) : setNavScroll(false);
+
+	window.addEventListener('scroll', fillHeader);
+
 	return (
-		<div className="header">
+		<div className={navScroll ? "header active" : "header"}>
 
 			<section className="header__left">
 
@@ -54,7 +56,7 @@ function Header() {
 					</Link>	
 				</div>
 				<nav className={sideNav ? 'header__mobileNav active' : "header__mobileNav"} >
-					<Link to="#" className="header__mobileNavClose"><div onClick={showNav}>X</div></Link>
+					
 					<ul onClick={showNav}>
 						<Link to='./mens' className="header__mobileLink"><li>Men</li></Link>
 						<Link to='./women' className="header__mobileLink"><li>Women</li></Link>
@@ -65,6 +67,7 @@ function Header() {
 							<span className="header__loginText"><li>{user ? 'Sign Out' : 'Sign In'}</li></span>
 						</div>
 						</Link>
+						<Link to="#" className="header__mobileNavClose"><div onClick={showNav}>Close Menu</div></Link>
 					</ul>
 				</nav>
 			</div>
@@ -73,7 +76,7 @@ function Header() {
 			
 			<section className="header__right">
 
-					<Link to='/checkout' className="header__link">
+					<Link to='./checkout' className="header__link">
 						<div className="header__cart">
 							<ShoppingBasketIcon className="header__cartIcon"/>
 							<span className="header__cartCount">{cart?.length}</span>

@@ -1,0 +1,13 @@
+[debug] [2021-06-14T19:33:51.655Z] ----------------------------------------------------------------------
+[debug] [2021-06-14T19:33:51.657Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Kyle Moreau\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting
+[debug] [2021-06-14T19:33:51.657Z] CLI Version:   9.3.0
+[debug] [2021-06-14T19:33:51.657Z] Platform:      win32
+[debug] [2021-06-14T19:33:51.657Z] Node Version:  v14.15.4
+[debug] [2021-06-14T19:33:51.658Z] Time:          Mon Jun 14 2021 14:33:51 GMT-0500 (Central Daylight Time)
+[debug] [2021-06-14T19:33:51.659Z] ----------------------------------------------------------------------
+[debug] [2021-06-14T19:33:51.659Z] 
+[debug] [2021-06-14T19:33:51.667Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-06-14T19:33:51.667Z] > authorizing via signed-in user
+[debug] [2021-06-14T19:33:51.668Z] [iam] checking project e-store-3df82 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-06-14T19:33:51.671Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/e-store-3df82:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}

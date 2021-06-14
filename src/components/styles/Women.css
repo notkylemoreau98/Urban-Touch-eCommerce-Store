@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 1rem 2.5rem;
+  padding: 4.5rem 2.5rem 2rem 2.5rem;
   border-radius: 10px;
   background: #f7f7f7;
 }
@@ -42,7 +42,7 @@
   transition: all 0.3s ease;
 }
 
-@media only screen and(max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .women {
     margin: 1rem;
   }
@@ -56,7 +56,7 @@
   .women__tops > h1,
   .women__pants > h1,
   .women__shoes > h1 {
-    margin: 30px 2rem;
+    margin: 30px 2rem 40px 2rem;
   }
 
   .rowTop {
@@ -68,10 +68,10 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
   .women {
-    margin: 0 1rem;
-    padding: 0 1rem;
+    margin: 0;
+    padding-top: 3.5rem;
   }
 
   .women__topsContainer,

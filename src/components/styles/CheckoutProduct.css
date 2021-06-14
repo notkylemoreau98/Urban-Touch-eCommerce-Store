@@ -12,16 +12,19 @@
 .checkoutProduct__info > button {
   background: #f7f7f7;
   cursor: pointer;
-  border: 1px solid #a7a7a7;
+  border: 1.5px solid #23212a;
+  background: none;
   border-radius: 2px;
   margin-top: 1.5rem;
-  padding: 10px 15px;
-  font-size: 1rem;
+  padding: 5px 15px;
+  font-size: 0.9rem;
+  font-weight: 700;
   color: #111;
 }
 
-.checkoutProduct__info > button:hover {
-  opacity: 0.9;
+.checkoutProduct__price {
+  margin-top: 0.75rem;
+  font-size: 1.25rem;
 }
 
 .checkoutProduct__image {
