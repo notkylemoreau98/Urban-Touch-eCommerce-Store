@@ -8,15 +8,18 @@ const stripe = require("stripe")('sk_test_51IJ8afHi9uitH2NYJghnn4xA84goAZ5J92gCf
 
 const app = express();
 
-app.use(cors({ origin: true }));
+// Handling CORS
+app.use(cors({ origin: true })); //Working for GET but not POST
+
 app.use(express.json());
 
+// Testing and Posting to Cloud API
 app.get('/', (request, response) => response.status(200).send('Urban Touch is online')); // (Test Snippet)
 
 app.post('/payments/create', async (request,response) => {
 	const total = request.query.total;
 	
-	console.log("Payment received: ", total)
+	console.log("Payment received: ", total) //POSTS payment under firebase, not on api
 
 	const paymentIntent = await stripe.paymentIntents.create({
 		amount: total,

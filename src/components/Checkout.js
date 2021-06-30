@@ -15,7 +15,7 @@ function Checkout() {
 
 					{cart.map(item => (
 						<CheckoutProduct
-							key={item.id}
+							id={item.id} //Should be a key
 							title={item.title}
 							image={item.image}
 							price={item.price}

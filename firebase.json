@@ -6,10 +6,15 @@
       "**/.*",
       "**/node_modules/**"
     ],
-  "rewrites": [ {
-    "source": "**",
-    "destination": "/index.html"
-  } ]
+    "rewrites": [ {
+      "source": "/api/**",
+      "function": "app"
+      },
+      {
+      "source": "!/@(api)/**",
+      "destination": "/index.html"
+      } 
+    ]
 
   },
   "functions": {

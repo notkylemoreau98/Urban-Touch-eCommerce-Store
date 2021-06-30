@@ -52,7 +52,7 @@ function Signin() {
 					<p><strong>Password</strong> (Test: Test123)</p>
 					<input type="password" value={password} onChange={e => setPassword(e.target.value)} />
 
-					<button type="submit" className='signin__button' onClick={signIn}  >Sign In</button>
+					<button type="submit" className='signin__button' onClick={signIn}>Sign In</button>
 				</form>
 
 				<p className="signin__accountMessage">Don't have an account? Sign up below.</p>

@@ -2,11 +2,11 @@ import React, { useState, useEffect } from 'react';
 import './styles/Payment.css';
 import { useStateValue } from '../StateProvider';
 import { Link, useHistory } from 'react-router-dom';
-import CheckoutProduct from './CheckoutProduct';
-import CurrencyFormat from 'react-currency-format';
 import { useStripe, useElements, CardElement } from '@stripe/react-stripe-js';
 import { getCartTotal } from '../reducer';
 import { db } from '../firebase';
+import CheckoutProduct from './CheckoutProduct';
+import CurrencyFormat from 'react-currency-format';
 import axios from '../axios';
 
 function Payment() {
@@ -29,10 +29,10 @@ function Payment() {
 				url: `/payments/create?total=${getCartTotal(cart) * 100}` //x100 because stripe expects value in pennies
 			});
 			setClientSecret(response.data.clientSecret);
+				console.log(clientSecret);
 		};
 
 		getClientSecret(); 
-		console.log(clientSecret); //Error getting client secret
 	}, [cart])
 
 

@@ -1,7 +1,6 @@
 import React from 'react';
 import './styles/Showcase.css';
 import { Link } from 'react-router-dom';
-import Model from './styles/images/Showcase Model.png'
 
 function Showcase() {
 	return (

@@ -53,13 +53,13 @@
 }
 
 #men__card {
-  background: url("./images/menDirect.jpg");
+  background: url("./images/menDirect-min.jpg");
   background-position: center;
   background-size: cover;
 }
 
 #women__card {
-  background: url("./images/womenDirect.jpg");
+  background: url("./images/womenDirect-min.jpg");
   background-position: center;
   background-size: cover;
 }
