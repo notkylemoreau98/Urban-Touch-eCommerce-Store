@@ -104,6 +104,7 @@ function Payment() {
 								title={item.title}
 								image={item.image}
 								price={item.price}
+								hideButton
 							/>
 						))}
 					</div>
