@@ -9,7 +9,6 @@ import MenuIcon from '@material-ui/icons/Menu';
 import Logo from './styles/images/simple-logo.png'
 
 function Header() {
-
 	const [{ cart, user }, dispatch] = useStateValue();
 	const [sideNav, setSidenav] = useState(false);
 	const	[navScroll, setNavScroll] = useState(false);

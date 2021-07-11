@@ -21,7 +21,7 @@ const [{ cart }, dispatch] = useStateValue();
 
 	return (
 		<div className="product">
-			<img className="product__image" src={ image } alt=""/>
+			<img className="product__image" src={ image } alt={ title }/>
 			<h3 className="product__title">{ title }</h3>
 			<div className="product__price">
 				<p>${ price }</p>

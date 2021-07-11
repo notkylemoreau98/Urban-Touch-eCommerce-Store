@@ -64,7 +64,7 @@
   }
 
   .rowBottom {
-    margin-top: 4rem;
+    margin-top: 5rem;
   }
 }
 
@@ -96,5 +96,10 @@
   .women__pant,
   .women__shoe {
     margin-bottom: 5rem;
+  }
+
+  .rowTop,
+  .rowBottom {
+    margin-top: 1.75rem;
   }
 }

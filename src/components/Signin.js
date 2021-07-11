@@ -10,11 +10,11 @@ function Signin() {
 	const [email, setEmail] = useState('');
 	const [password, setPassword] = useState('');
 
-	const signIn = e => {
+	const signIn = (e) => {
 		e.preventDefault(); 
 
 		auth.signInWithEmailAndPassword(email, password)
-			.then(auth => {
+			.then((auth) => {
 					history.push('/')
 			})
 			.catch(error => alert(error.message));

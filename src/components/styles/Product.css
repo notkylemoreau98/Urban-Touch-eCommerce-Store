@@ -59,7 +59,7 @@
 
 @media only screen and (max-width: 900px) {
   .product {
-    height: 275px;
+    height: 300px;
     width: 35vw;
   }
 
@@ -74,7 +74,7 @@
 
 @media only screen and (max-width: 600px) {
   .product {
-    height: 300px;
+    height: 350px;
     width: 65vw;
   }
 
