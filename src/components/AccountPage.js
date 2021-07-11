@@ -9,7 +9,7 @@ function AccountPage() {
 
 	return (
 		<div className="accountPage">
-			<h1 className="accountPage__message">Welcome <span>{!user ? 'Guest' : user.email}</span>, I would like to personally thank you for visting my e-shop prototype!</h1>
+			<h1 className="accountPage__message">Welcome <span>{!user ? 'Guest' : user.email}</span>, click on the button below to view your previous orders!</h1>
 
 			<Link to="/orders" className="accountPage__link">
 				<button className="accountPage__previousOrdersButton">View Previous Orders</button>

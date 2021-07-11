@@ -70,7 +70,7 @@
 @media only screen and (max-width: 768px) {
   .showcase {
     padding: 7rem 0 0 0;
-    height: 75vh;
+    height: 70vh;
     background-image: linear-gradient(to bottom, transparent 0%, #23212a 100%),
       url("./images/UrbanTouch_MobileBackground-min.jpg");
     background-position: right;
@@ -110,9 +110,9 @@
   }
 
   .showcase__shoppingButton {
-    width: 35vw;
+    width: 40vw;
     font-size: 1rem;
-    padding: 0.35rem 0;
+    padding: 0.5rem;
     margin-top: 2rem;
     background: none;
     border-radius: 8px;
