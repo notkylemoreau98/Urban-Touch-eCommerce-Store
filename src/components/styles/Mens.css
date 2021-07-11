@@ -98,6 +98,12 @@
     margin-bottom: 5rem;
   }
 
+  .mens__shirt:last-child,
+  .mens__pant:last-child,
+  .mens__shoe:last-child {
+    margin-bottom: 0;
+  }
+
   .rowTop,
   .rowBottom {
     margin-top: 2rem;

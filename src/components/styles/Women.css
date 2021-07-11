@@ -98,6 +98,12 @@
     margin-bottom: 5rem;
   }
 
+  .women__top:last-child,
+  .women__pant:last-child,
+  .women__shoe:last-child {
+    margin-bottom: 0;
+  }
+
   .rowTop,
   .rowBottom {
     margin-top: 1.75rem;
