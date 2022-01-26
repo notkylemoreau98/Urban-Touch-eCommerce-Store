@@ -14,10 +14,10 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
   transition: all 0.3s;
 }
-
+/* 
 .product__image:hover {
   transform: scale(1.05);
-}
+} */
 
 .product__title {
   padding: 5px 10px 0 5px;
@@ -84,5 +84,11 @@
 
   .product__price {
     font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .product {
+    height: 475px;
   }
 }

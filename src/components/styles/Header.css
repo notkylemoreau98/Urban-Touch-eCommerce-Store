@@ -117,12 +117,11 @@
 .header__cartIcon {
   cursor: pointer;
   transform: scale(1.15);
-  opacity: 0.8;
   transition: all 0.3s;
 }
 
 .header__cartIcon:hover {
-  opacity: 1;
+  transform: scale(1.2);
 }
 
 .header__cartCount {
@@ -179,5 +178,11 @@
 
   .header__cart {
     display: none;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .header {
+    height: 8vh;
   }
 }

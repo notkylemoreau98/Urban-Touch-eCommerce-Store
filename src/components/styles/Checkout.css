@@ -3,7 +3,7 @@
   justify-content: space-between;
   background-color: #fff;
   min-height: 60vh;
-  padding: 4.5rem 20px 1rem 20px;
+  padding: 8vh 20px 1rem 20px;
   height: max-content;
 }
 
@@ -39,5 +39,11 @@
   .checkout__left,
   .checkout__right {
     width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .checkout {
+    padding-top: 10vh;
   }
 }

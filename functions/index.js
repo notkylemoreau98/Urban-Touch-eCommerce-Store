@@ -14,7 +14,7 @@ app.use(cors({ origin: true })); //Working for GET but not POST
 app.use(express.json());
 
 // Testing and Posting to Cloud API
-app.get('/', (request, response) => response.status(200).send('Urban Touch is online')); // (Test Snippet)
+app.get('/', (request, response) => response.status(200).send('Urban Touch is online')); // (Test)
 
 app.post('/payments/create', async (request,response) => {
 	const total = request.query.total;
